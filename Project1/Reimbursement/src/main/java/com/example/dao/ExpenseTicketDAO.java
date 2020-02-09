@@ -9,9 +9,6 @@ import com.example.model.ExpenseTicketModel;
 
 public class ExpenseTicketDAO {
 
-	private static String url = "jdbc:oracle:thin:@usfpega2001.cewha0omcs9b.us-east-2.rds.amazonaws.com:1521:orcl";
-	private static String username = "bankdb";
-	private static String password = "b4nklif3";
 	
 	
 	public void intExp1(Double amount2, String date, int expense_type) {
