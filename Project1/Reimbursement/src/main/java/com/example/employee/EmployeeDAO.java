@@ -19,7 +19,10 @@ public class EmployeeDAO {
 		}
 	}
 
-private static String user;
+	private static String url = "BANKDB_URL";
+	private static String username = "BANKDB_USER";
+	private static String password = "BANKDB_PASS";
+	private static String user;
 
 	private static String username2;
 	private static String password2;

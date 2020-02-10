@@ -18,6 +18,9 @@ public class ExpenseTicketDAO {
 		}
 	}
 	
+	private static String url = "BANKDB_URL";
+	private static String username = "BANKDB_USER";
+	private static String password = "BANKDB_PASS";
 	 
 	
 	public void intExp1(Double amount2, String date, int expense_type, int userid, String first_name, String last_name, String description ) {

@@ -56,7 +56,7 @@ public class ExpenseTicketServlet extends HttpServlet {
 		session.setAttribute("description", notes);
 		
 		PrintWriter out = response.getWriter();
-		out.println("Your ticket has been submitted.");
+		out.println("Your Gil Will Be Back Shortly...Unless A Bandit Gets It");
 	}
 
 
