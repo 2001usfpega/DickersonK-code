@@ -21,9 +21,9 @@ public class RequestHelper {
 			//System.out.println("in login.change");
 			return EmployeeController.login(req);
 			
-		case "/HelloFrontController/home.change":
+		case "/Reimbursement/AdminHome.html":
 			System.out.println("in home change");
-			return AdminController.home(req);
+			return AdminController.adlogin(req);
 			
 		case "/Reimbursement/yup":
 			return ExpenseTicketController.money(req);

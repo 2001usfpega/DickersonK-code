@@ -7,6 +7,7 @@ public class EmployeeModel {
 	public String password;
 	private String first_name;
 	private String last_name;
+	public int rank;
 	public int getUserid() {
 		return userid;
 	}
@@ -37,13 +38,20 @@ public class EmployeeModel {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
-	public EmployeeModel(int userid, String username, String password, String first_name, String last_name) {
+	public int getRank() {
+		return rank;
+	}
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+	public EmployeeModel(int userid, String username, String password, String first_name, String last_name, int rank) {
 		super();
 		this.userid = userid;
 		this.username = username;
 		this.password = password;
 		this.first_name = first_name;
 		this.last_name = last_name;
+		this.rank = rank;
 	}
 	public EmployeeModel() {
 		super();
@@ -52,7 +60,10 @@ public class EmployeeModel {
 	@Override
 	public String toString() {
 		return "EmployeeModel [userid=" + userid + ", username=" + username + ", password=" + password + ", first_name="
-				+ first_name + ", last_name=" + last_name + "]";
+				+ first_name + ", last_name=" + last_name + ", rank=" + rank + "]";
 	}
+	
+	
+
 	
 }

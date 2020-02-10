@@ -25,4 +25,25 @@
     <url-pattern>/ExpenseTicketServlet</url-pattern>
     <url-pattern>/yup</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminServlet</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.example.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>dfgh</display-name>
+    <servlet-name>dfgh</servlet-name>
+    <servlet-class>asdfghj.dfgh</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dfgh</servlet-name>
+    <url-pattern>/dfgh</url-pattern>
+  </servlet-mapping>
 </web-app>

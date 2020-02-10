@@ -12,9 +12,7 @@ import javax.servlet.http.HttpSession;
 import com.example.dao.ExpenseTicketDAO;
 import com.example.model.ExpenseTicketModel;
 
-/**
- * Servlet implementation class ExpenseTicketServlet
- */
+
 public class ExpenseTicketServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -33,25 +31,25 @@ public class ExpenseTicketServlet extends HttpServlet {
 	
 	
 	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, NullPointerException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, NullPointerException, NumberFormatException{
 		
 		ExpenseTicketDAO moneeeey = new ExpenseTicketDAO();
 		
 		
 		int userid=Integer.parseInt(request.getParameter("userid"));
-		String firstname = request.getParameter("firstname");
-		String lastname = request.getParameter("lastname");
+		String first_name = request.getParameter("first_name");
+		String last_name = request.getParameter("last_name");
 		int type = Integer.parseInt(request.getParameter("type"));
 		double amount2 = Double.parseDouble(request.getParameter("Amount"));
 		String date = request.getParameter("Date");
 		String notes = request.getParameter("Description");
 		
-		moneeeey.intExp1(amount2, date, type);
+		moneeeey.intExp1(amount2, date,type,userid,first_name,last_name, notes);
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("id", userid);
-		session.setAttribute("first_name", firstname);
-		session.setAttribute("last_name", lastname);
+		session.setAttribute("firstname", first_name);
+		session.setAttribute("lastname", last_name);
 		session.setAttribute("expense_type", type);
 		session.setAttribute("amount", amount2);
 		session.setAttribute("date_submitted", date);

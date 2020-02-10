@@ -19,7 +19,7 @@ public class EmployeeDAO {
 		}
 	}
 
-	private static String user;
+private static String user;
 
 	private static String username2;
 	private static String password2;
@@ -89,7 +89,7 @@ public class EmployeeDAO {
 		}
 	}
 
-	public EmployeeModel emp_login(String username2, String password2) {
+	public EmployeeModel emp_login(String username2, String password2, int rank) {
 
 		EmployeeModel yeah = null;
 
@@ -105,8 +105,10 @@ public class EmployeeDAO {
 
 			if (rs.next()) {
 				yeah = new EmployeeModel(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),
-						rs.getString(5));
+						rs.getString(5),rs.getInt(6));
 
+			}else {
+				System.out.println("not");
 			}
 			// System.out.println(Uname+Pass);
 
