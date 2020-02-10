@@ -22,10 +22,9 @@ public class AdminDAO implements List {
 		}
 	}
 	
-	private static String url ="jdbc:oracle:thin:@usfpega2001.cewha0omcs9b.us-east-2.rds.amazonaws.com:1521:orcl";
-	private static String username = "bankdb";
-	private static String password = "b4nklif3";
-	
+	private static String url = "BANKDB_URL";
+	private static String username = "BANKDB_USER";
+	private static String password = "BANKDB_PASS";
 	
 	
 	public List <AdminModel> getAllExpenses(){
